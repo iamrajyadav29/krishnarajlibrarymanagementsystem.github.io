@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Library - Search Books</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Search Books</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="search_books.html">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="GET" action="search_books.html">
+            <input type="text" name="q" placeholder="Search for books..." required>
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="books-list">
+            <div class="book-item">
+                <h3>To Kill a Mockingbird</h3>
+                <p>Author: Harper Lee</p>
+                <p>Available Copies: 2</p>
+                <button class="btn-borrow">Borrow</button>
+            </div>
+            <div class="book-item">
+                <h3>Moby Dick</h3>
+                <p>Author: Herman Melville</p>
+                <p>Available Copies: 4</p>
+                <button class="btn-borrow">Borrow</button>
+            </div>
+            <!-- More search results can be added here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 E-Library System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
